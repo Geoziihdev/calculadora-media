@@ -1,0 +1,94 @@
+/* Estilo global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Cor de fundo suave */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Centraliza tudo */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa a altura total da janela */
+  box-sizing: border-box;
+}
+
+/* Contêiner da calculadora */
+.calculadora {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555555;
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Efeito suave no foco */
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botão */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03); /* Leve aumento no hover */
+}
+
+button:active {
+  transform: scale(0.97); /* Leve redução ao clicar */
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745; /* Verde para aprovação */
+}
+
+#resultado.erro {
+  color: #dc3545; /* Vermelho para mensagens de erro */
+}
